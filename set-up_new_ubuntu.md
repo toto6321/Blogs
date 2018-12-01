@@ -5,6 +5,8 @@
 
 ## System settings
 
+### setting by shell scripts
+
 ```shell
 # write a rule to etc/inputrc to make auto-completion case-insensitive for yourself. 
 ## You need to exit current seesion to make it in effect
@@ -20,8 +22,11 @@ echo -e "\n# Enlarge the history buffer \nHISTSIZE=10000 \nHISTFILESIZE=10000 \n
 sudo apt-get install -y exfat-fuse exfat-util
 
 # customize aliaes on my appetite
-cp ./bash_aliaes ~/.bash_aliaes
+cp ./bash_aliases ~/.bash_aliases
 ```
+
+### setting by your own
+open the setting->Devices->Keyboard, set the hot-key according to the file  system ho-key.md
 
 
 ## Developer environment
