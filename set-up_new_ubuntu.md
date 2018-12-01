@@ -8,20 +8,25 @@
 ```shell
 # write a rule to etc/inputrc to make auto-completion case-insensitive for yourself. 
 ## You need to exit current seesion to make it in effect
-echo -e "\n# make the tab auto-completion case insensitive \nset completion-ignore-case on" >> .inputrc
+echo -e "\n# make the tab auto-completion case insensitive \nset completion-ignore-case on" >> ~/.inputrc
 
 ## or remove the preceding '##' in following line to make it for everyone
 ########## sudo echo -e "\n# make the tab auto-completion case insensitive \nset completion-ignore-case on" >> /etc/inputrc
 
+# enlarge history buffer and set it 10000
+echo -e "\n# Enlarge the history buffer \nHISTSIZE=10000 \nHISTFILESIZE=10000 \n" >> ~/.bashrc
+
 # install packages for recoginizing exfat filesystem
 sudo apt-get install -y exfat-fuse exfat-util
 
-# customized alias on my appetite
-# ...
+# customize aliaes on my appetite
+cp ./bash_aliaes ~/.bash_aliaes
 ```
 
 
 ## Developer environment
+
+### Installation by shell scripts
 
 ```shell
 # first update the database 
@@ -36,10 +41,10 @@ sudo apt-get install -y vim
 # Git
 sudo apt-get install -y git
 
-# python suite
+# Python suite
 sudo apt-get install -y python3 python3-doc python3-pip
 
-# nodejs suite
+# Nodejs suite
 sudo apt-get install -y nodejs nodejs-doc npm
 
 # Java
@@ -66,3 +71,24 @@ sudo apt-get update
 sudo apt-get install -y typora
 
 ```
+
+### Installation by your own
+
+#### IDE
+
+| Language          | IDE                     |
+| ----------------- | ----------------------- |
+| Python            | Pycharm                 |
+| Javascript/Nodejs | Webstorm, Visual studio |
+| Java/Kotlin       | IDEA                    |
+| C/C++             | Clion                   |
+| *                 | Netbean                 |
+
+#### Excellent editors
+* Notepad++
+* Sublime
+* Sourcetree
+
+
+
+
