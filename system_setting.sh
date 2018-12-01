@@ -14,4 +14,4 @@ echo -e "\n# Enlarge the history buffer \nHISTSIZE=10000 \nHISTFILESIZE=10000 \n
 sudo apt-get install -y exfat-fuse exfat-util
 
 # customize aliaes on my appetite
-cp ./bash_aliaes ~/.bash_aliaes
+cp ./bash_aliases ~/.bash_aliases
