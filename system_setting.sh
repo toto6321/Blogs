@@ -10,8 +10,13 @@ echo -e "\n# make the tab auto-completion case insensitive \nset completion-igno
 # enlarge history buffer and set it 10000
 echo -e "\n# Enlarge the history buffer \nHISTSIZE=10000 \nHISTFILESIZE=10000 \n" >> ~/.bashrc
 
-# install packages for recoginizing exfat filesystem
-sudo apt-get install -y exfat-fuse exfat-util
+# PS1: BASH prompt profile 
+echo -e '\n# PS1: BASH prompt profile \nPS1="\[\e[1;32m[\t]\] \[\e[1;34m\w\] \[\e[1;33m\$\] \[\e[0;37m\]' >> ~/.bashrc
+
 
 # customize aliaes on my appetite
 cp ./bash_aliases ~/.bash_aliases
+
+# install packages for recoginizing exfat filesystem
+sudo apt-get install -y exfat-fuse exfat-util
+
