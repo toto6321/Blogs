@@ -26,7 +26,7 @@ cp ./bash_aliases ~/.bash_aliases
 ```
 
 ### setting by your own
-open the setting -> Devices -> Keyboard, set the hotkey according to the file system-hot-key.md
+open the setting -> Devices -> Keyboard, set the hotkey according to the file system-hotkey.md
 
 
 ## Developer environment
