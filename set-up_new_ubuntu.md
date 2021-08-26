@@ -26,7 +26,7 @@ cp ./bash_aliases ~/.bash_aliases
 ```
 
 ### setting by your own
-open the setting->Devices->Keyboard, set the hot-key according to the file  system ho-key.md
+open the setting -> Devices -> Keyboard, set the hotkey according to the file system-hot-key.md
 
 
 ## Developer environment
@@ -54,15 +54,30 @@ sudo apt-get install -y nodejs nodejs-doc npm
 
 # Java
 ## Java8 /JDK8
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt update
-sudo apt install oracle-java8-installer
-## If you have open-jdk installed already and want to set the jdk8 default, uncomment the nex line
+# sudo add-apt-repository ppa:webupd8team/java
+# sudo apt update
+# sudo apt install oracle-java8-installer
+## If you have open-jdk installed already and want to set the jdk8 default, uncomment the next line
 ########## sudo apt install oracle-java8-set-default
+## OpenJDK
+sudo apt install -y openjdk
 
 # Databases
 # mysql
-sudo apt-get install -y mysql
+sudo apt-get install -y mysql-server
+
+## login on root
+sudo mysql
+
+```sql
+create user admin@'%' identified by 'admin';
+
+grant all on *.* to admin@'%' with grant option;
+
+# reset password for root
+alter user 'root'@'localhost' identified by 'replace_with_your_password';
+```
+
 # mongodb
 sudo apt-get install -y mongodb
 
