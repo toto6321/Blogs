@@ -11,7 +11,8 @@ echo -e "\n# make the tab auto-completion case insensitive \nset completion-igno
 echo -e "\n# Enlarge the history buffer \nHISTSIZE=10000 \nHISTFILESIZE=10000 \n" >> ~/.bashrc
 
 # PS1: BASH prompt profile 
-echo -e '\n# PS1: BASH prompt profile \nPS1="\[\e[1;32m[\t]\] \[\e[1;34m\w\] \[\e[1;33m\$\] \[\e[0;37m\]' >> ~/.bashrc
+# e.g. [09:47:06] ~ 4 $
+echo -e '\n# PS1: BASH prompt profile \nPS1="\[[1;32m[\\t]\] \[[1;34m\w\] \[[1;35m\#\] \[[1;33m\$\] \[[0;37m\]"' >> ~/.bashrc
 
 
 # customize aliaes on my appetite
